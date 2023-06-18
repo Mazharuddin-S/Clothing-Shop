@@ -1,0 +1,84 @@
+#cart {
+  height: 100%;
+  width: 30%;
+  position: fixed;
+  right: -30%;
+  background-color: black;
+  color: white;
+  transition: all 1s;
+}
+
+#openBtn {
+  border-radius: 1rem 0 0 1rem;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: -3rem;
+  padding: 0;
+  background: black;
+  color: white;
+  font-size: 1.3rem;
+}
+#openBtn span {
+  pointer-events: none;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: gold;
+  color: red;
+  font-size: small;
+  position: absolute;
+  left: 1.3rem;
+  top: 1.5rem;
+}
+#openBtn svg {
+  pointer-events: none;
+}
+#closeBtn {
+  border-radius: 1rem 0 0 1rem;
+  color: white;
+
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: -3rem;
+  padding: 0;
+  background: black;
+}
+#cart > button:hover {
+  color: gold;
+  background: gray;
+}
+#selected > h4 {
+  text-align: center;
+}
+#selected {
+  overflow: auto;
+  height: 100%;
+}
+#subtotal {
+  width: 100%;
+  background-color: gray;
+  position: absolute;
+  bottom: 0px;
+}
+#subtotal div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+#subtotal div h3:nth-child(2) {
+  color: gold;
+  margin: auto 0;
+}
+#subtotal > button {
+  background-color: goldenrod;
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+}
+
+#subtotal > button:hover {
+  background-color: rgb(248, 190, 0);
+}

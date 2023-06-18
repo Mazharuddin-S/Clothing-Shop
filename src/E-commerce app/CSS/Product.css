@@ -1,0 +1,51 @@
+#parent {
+  display: flex;
+  margin: 5%;
+}
+#productParent {
+  width: 80%;
+}
+#productParent > h4 {
+  margin: 0 0 10px 0;
+  text-align: left;
+}
+#productGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+}
+
+#product {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+
+  height: 70vh;
+  width: 100%;
+}
+#product:hover > button {
+  background-color: rgb(194, 194, 30);
+}
+#product img {
+  margin: 0.5rem;
+  width: 90%;
+  height: 50%;
+}
+
+#product > h4 {
+  /* height: 15%; */
+  text-align: center;
+  padding: 0 1rem;
+  margin: 0.4rem 0;
+}
+#product > button {
+  width: 100%;
+  height: 10%;
+  background: #000;
+  color: white;
+  margin-top: auto;
+}
+button:hover {
+  background-color: rgb(194, 194, 30);
+}

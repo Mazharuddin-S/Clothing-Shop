@@ -1,0 +1,28 @@
+#sorting {
+  width: 20%;
+  /* border: 1px solid green; */
+}
+
+#sorting div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 1rem;
+  /* padding: 1rem; */
+}
+#sorting h3,
+h4 {
+  text-align: left;
+  padding: 0;
+}
+#sorting button {
+  background-color: gainsboro;
+  border: transparent;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+#sorting button:hover {
+  border: 1px solid black;
+  color: black;
+}

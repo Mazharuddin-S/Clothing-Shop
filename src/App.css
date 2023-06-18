@@ -1,7 +1,17 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
-
+form div {
+  margin-bottom: 10px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+input {
+  border: 2px solid skyblue;
+  height: 30px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +45,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+label {
+  font-weight: bold;
+  font-size: 20px;
+}
+.Error {
+  color: red;
 }

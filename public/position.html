@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .anchor {
+        background-color: yellow;
+        height: 150vh;
+      }
+      div {
+        background: cyan;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="anchor">
+      <a
+        href="
+    #don"
+        target="_self"
+      >
+        Product
+      </a>
+      <a href="./otherPublic/bootstrap.css" target="">About</a>
+    </div>
+
+    <div>
+      <h4 id="don">Don</h4>
+    </div>
+    <script>
+      async function Fetch() {
+        console.log("start");
+        const user = await fetch(
+          "https://jsonplaceholder.typicode.com/posts/1"
+        );
+
+        const data = await user.json();
+        console.log("end");
+        console.log(data);
+      }
+      Fetch();
+    </script>
+  </body>
+</html>
